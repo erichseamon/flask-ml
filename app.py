@@ -14,7 +14,7 @@ landslide_model = pickle.load(open("/git/data/landslides/models/climate-landslid
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('joros.html')
 
 @app.route('/landslides', methods=['POST'])
 

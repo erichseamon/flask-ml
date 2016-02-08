@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>NDVI Temporal Average</title>
+    <script type="text/javascript" 
+            src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" 
+            src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+      body, html
+            {width: 100%;height: 100%;}
+            body{margin: 0;}
+    </style>
+  </head>
+  <body>
+
+    <table cellpadding="20px">
+    <!-- LEFT SIDE OF THE PAGE -->
+    <td valign="top" width="30%">
+      <h2>NDVI Calculation for Lat Lon point</h2>
+
+      <form action="#" method="post">
+          <div>
+              <p>
+                  <!-- <label for="fac">Factor</label>
+                  <input type="text" value="1" name="factor">
+                  <br> -->
+                  <label for="from">Start Date</label>
+                  <input type="text" id="from" value="2013-04-01" name="startdate">
+                  <br>
+                  <label for="to">End Date</label>
+                  <input type="text" id="to" value="2013-07-01" name="enddate">
+                  <br>
+                  <label for="from">Lon, Lat</label>
+                  <input id="UserLatLong" name="UserLatLong" value="-119.8219,39.5272" />
+                  <p>
+                    <b>Pressing "Run NDVI" computes mean, median, max, and, min NDVI for Longitude/Latitude coordinate</b>
+                  <p>
+                    <input type="submit" value="Run NDVI">
+                    
+    </td>
+
+    <!-- RIGHT SIDE OF THE PAGE -->
+    <td valign="top" width="70%">
+      <div id="map" style="width: 1280px; height: 600px;"></div>
+    </td>
+    </table>
+      
+  </body>
+</html>
+            
