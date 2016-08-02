@@ -10,13 +10,13 @@ from flask import render_template, abort, jsonify, request,redirect, json
 app = Flask(__name__)
 app.debug = True
 
-landslide_model = pickle.load(open("/git/data/landslides/models/climate-landslide.pkl", "rb"))
+landslide_model = pickle.load(open("/home/git/dmine/circ/dmine-circ-ag-api-part5.pkl", "rb"))
 
 @app.route('/')
 def index():
     return render_template('joros.html')
 
-@app.route('/landslides', methods=['POST'])
+@app.route('/gridmet', methods=['POST'])
 
 def make_predict():
     #all kinds of error checking should go here
